@@ -50,3 +50,15 @@ $.ajax({
   }, 1000)
 
 })
+
+
+//Accordion
+$("#accordion h2").click(function(){
+    if($(this).next("p").is(":visible")) {
+      $(this).next("p").slideToggle();
+
+    } else{
+    $("#accordion p").slideUp();
+    $(this).next("p").slideToggle();
+    }
+});

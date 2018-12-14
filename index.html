@@ -7,6 +7,7 @@
 		* {
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
 		}
 	 	h1 {
 			background-color: #333;
@@ -33,8 +34,21 @@
 		}
 		#perfil {
 			width: 300px;
+			float: left;
 			padding: 30px;
 			background-color: #eee;
+		}
+		#accordion {
+			width: calc(100% - 300px);
+			float: left;
+			padding: 30px;
+		}
+		#accordion p {
+			margin-bottom: 60px;
+			display: none;
+		}
+		#accordion h2 {
+			cursor: pointer;
 		}
 	</style>
 </head>
@@ -42,6 +56,14 @@
 	<h1>Aula 6 - AJAX</h1>
 	<div id="perfil">
 		<img src="loading.gif" alt="loading" width="150px">
+	</div>
+	<div id="accordion">
+		<h2>Sobre</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dicta accusamus fuga, eligendi tempore inventore excepturi hic architecto deserunt perspiciatis consequatur esse asperiores est voluptas nisi nesciunt id iusto deleniti.</p>
+		<h2>Vida e obra</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, fugit iure ratione magni, minima sed deleniti culpa ullam vel esse ipsa. Numquam architecto eveniet, minima dolorum vero nisi nostrum illum.</p>
+		<h2>Mais informações</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nostrum tenetur doloribus est quas, laborum unde odit officia similique consectetur, molestias ut quidem architecto assumenda corrupti praesentium ullam quasi neque.</p>
 	</div>
 
 	<script src="jquery-3.3.1.min.js"></script>
